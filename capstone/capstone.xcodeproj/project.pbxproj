@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		727BE65F2CBF1E1C00AE384A /* MyLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE65E2CBF1E1C00AE384A /* MyLists.swift */; };
 		727BE6612CBF2F0800AE384A /* AddMyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE6602CBF2F0800AE384A /* AddMyList.swift */; };
-		72D75AFA2CB9FFE2008B6E67 /* capstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AF92CB9FFE2008B6E67 /* capstoneApp.swift */; };
-		72D75AFC2CB9FFE2008B6E67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AFB2CB9FFE2008B6E67 /* ContentView.swift */; };
+		72D75AFA2CB9FFE2008B6E67 /* CapstoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */; };
+		72D75AFC2CB9FFE2008B6E67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AFB2CB9FFE2008B6E67 /* HomeView.swift */; };
 		72D75AFE2CB9FFE5008B6E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D75AFD2CB9FFE5008B6E67 /* Assets.xcassets */; };
 		72D75B022CB9FFE5008B6E67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D75B012CB9FFE5008B6E67 /* Preview Assets.xcassets */; };
 		72D75B0C2CB9FFE6008B6E67 /* capstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75B0B2CB9FFE6008B6E67 /* capstoneTests.swift */; };
 		72D75B162CB9FFE6008B6E67 /* capstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75B152CB9FFE6008B6E67 /* capstoneUITests.swift */; };
 		72D75B182CB9FFE6008B6E67 /* capstoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75B172CB9FFE6008B6E67 /* capstoneUITestsLaunchTests.swift */; };
+		72F0F6562CC95F0900773B67 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6552CC95F0900773B67 /* CoreDataProvider.swift */; };
+		72F0F6592CC9602F00773B67 /* RemindersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6572CC9602F00773B67 /* RemindersModel.xcdatamodeld */; };
+		72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F65B2CC9624000773B67 /* MyList+CoreDataClass.swift */; };
+		72F0F65E2CC9625C00773B67 /* MyList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F65D2CC9625C00773B67 /* MyList+CoreDataProperties.swift */; };
+		72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6622CC9672D00773B67 /* AddNewListView.swift */; };
+		72F0F6652CC96CB900773B67 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6642CC96CB900773B67 /* ColorPickerView.swift */; };
+		72F0F6682CC9733600773B67 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6672CC9733600773B67 /* ReminderService.swift */; };
+		72F0F66B2CC9750E00773B67 /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F66A2CC9750E00773B67 /* UIColorTransformer.swift */; };
+		72F0F66D2CC97A1100773B67 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F66C2CC97A1100773B67 /* MyListsView.swift */; };
+		72F0F66F2CC97BB400773B67 /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F66E2CC97BB400773B67 /* MyListCellView.swift */; };
+		72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6702CC97BF500773B67 /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +50,8 @@
 		727BE65E2CBF1E1C00AE384A /* MyLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLists.swift; sourceTree = "<group>"; };
 		727BE6602CBF2F0800AE384A /* AddMyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyList.swift; sourceTree = "<group>"; };
 		72D75AF62CB9FFE2008B6E67 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		72D75AF92CB9FFE2008B6E67 /* capstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capstoneApp.swift; sourceTree = "<group>"; };
-		72D75AFB2CB9FFE2008B6E67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppApp.swift; sourceTree = "<group>"; };
+		72D75AFB2CB9FFE2008B6E67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72D75AFD2CB9FFE5008B6E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72D75AFF2CB9FFE5008B6E67 /* capstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = capstone.entitlements; sourceTree = "<group>"; };
 		72D75B012CB9FFE5008B6E67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		72D75B112CB9FFE6008B6E67 /* capstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = capstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D75B152CB9FFE6008B6E67 /* capstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capstoneUITests.swift; sourceTree = "<group>"; };
 		72D75B172CB9FFE6008B6E67 /* capstoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capstoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72F0F6552CC95F0900773B67 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		72F0F6582CC9602F00773B67 /* RemindersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindersModel.xcdatamodel; sourceTree = "<group>"; };
+		72F0F65B2CC9624000773B67 /* MyList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		72F0F65D2CC9625C00773B67 /* MyList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		72F0F6622CC9672D00773B67 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
+		72F0F6642CC96CB900773B67 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		72F0F6672CC9733600773B67 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		72F0F66A2CC9750E00773B67 /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
+		72F0F66C2CC97A1100773B67 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
+		72F0F66E2CC97BB400773B67 /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
+		72F0F6702CC97BF500773B67 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +130,17 @@
 		72D75AF82CB9FFE2008B6E67 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
+				72F0F6692CC974F900773B67 /* Transformers */,
+				72F0F6662CC9732000773B67 /* Services */,
+				72F0F65F2CC966B600773B67 /* Views */,
+				72F0F65A2CC961E600773B67 /* Models */,
+				72F0F6542CC95ED300773B67 /* Providers */,
 				727BE65D2CBF1DEF00AE384A /* Screens */,
-				72D75AF92CB9FFE2008B6E67 /* capstoneApp.swift */,
-				72D75AFB2CB9FFE2008B6E67 /* ContentView.swift */,
+				72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */,
 				72D75AFD2CB9FFE5008B6E67 /* Assets.xcassets */,
 				72D75AFF2CB9FFE5008B6E67 /* capstone.entitlements */,
 				72D75B002CB9FFE5008B6E67 /* Preview Content */,
+				72F0F6572CC9602F00773B67 /* RemindersModel.xcdatamodeld */,
 			);
 			path = capstone;
 			sourceTree = "<group>";
@@ -122,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				72D75B012CB9FFE5008B6E67 /* Preview Assets.xcassets */,
+				72F0F6702CC97BF500773B67 /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -141,6 +169,51 @@
 				72D75B172CB9FFE6008B6E67 /* capstoneUITestsLaunchTests.swift */,
 			);
 			path = capstoneUITests;
+			sourceTree = "<group>";
+		};
+		72F0F6542CC95ED300773B67 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F6552CC95F0900773B67 /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		72F0F65A2CC961E600773B67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F65B2CC9624000773B67 /* MyList+CoreDataClass.swift */,
+				72F0F65D2CC9625C00773B67 /* MyList+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72F0F65F2CC966B600773B67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72D75AFB2CB9FFE2008B6E67 /* HomeView.swift */,
+				72F0F6622CC9672D00773B67 /* AddNewListView.swift */,
+				72F0F6642CC96CB900773B67 /* ColorPickerView.swift */,
+				72F0F66C2CC97A1100773B67 /* MyListsView.swift */,
+				72F0F66E2CC97BB400773B67 /* MyListCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72F0F6662CC9732000773B67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F6672CC9733600773B67 /* ReminderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72F0F6692CC974F900773B67 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F66A2CC9750E00773B67 /* UIColorTransformer.swift */,
+			);
+			path = Transformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +346,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F0F66F2CC97BB400773B67 /* MyListCellView.swift in Sources */,
 				727BE65F2CBF1E1C00AE384A /* MyLists.swift in Sources */,
+				72F0F6682CC9733600773B67 /* ReminderService.swift in Sources */,
 				727BE6612CBF2F0800AE384A /* AddMyList.swift in Sources */,
-				72D75AFC2CB9FFE2008B6E67 /* ContentView.swift in Sources */,
-				72D75AFA2CB9FFE2008B6E67 /* capstoneApp.swift in Sources */,
+				72F0F66B2CC9750E00773B67 /* UIColorTransformer.swift in Sources */,
+				72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */,
+				72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */,
+				72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */,
+				72F0F6652CC96CB900773B67 /* ColorPickerView.swift in Sources */,
+				72D75AFC2CB9FFE2008B6E67 /* HomeView.swift in Sources */,
+				72D75AFA2CB9FFE2008B6E67 /* CapstoneAppApp.swift in Sources */,
+				72F0F6562CC95F0900773B67 /* CoreDataProvider.swift in Sources */,
+				72F0F6592CC9602F00773B67 /* RemindersModel.xcdatamodeld in Sources */,
+				72F0F65E2CC9625C00773B67 /* MyList+CoreDataProperties.swift in Sources */,
+				72F0F66D2CC97A1100773B67 /* MyListsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +532,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -486,8 +569,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -633,6 +715,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		72F0F6572CC9602F00773B67 /* RemindersModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72F0F6582CC9602F00773B67 /* RemindersModel.xcdatamodel */,
+			);
+			currentVersion = 72F0F6582CC9602F00773B67 /* RemindersModel.xcdatamodel */;
+			path = RemindersModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 72D75AEE2CB9FFE2008B6E67 /* Project object */;
 }

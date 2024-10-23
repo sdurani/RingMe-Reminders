@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct capstoneApp: App {
+struct CapstoneAppApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(\.managedObjectContext, CoreDataProvider.shared.persistentContainer.viewContext)
         }
     }
 }

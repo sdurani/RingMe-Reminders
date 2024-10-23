@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct MyListCellView: View {
+   
+    let myList: MyList
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "list.bullet.circle.fill")
+                .foregroundColor(Color(myList.color))
+            Text(myList.name)
+            Spacer()
+            Image(systemName: "chevron.right")
+                .foregroundColor(.gray)
+                .opacity(0.4)
+                .padding([.trailing], 10)
+        }
     }
 }
 
-#Preview {
-    MyListCellView()
+
+struct MyListCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyListCellView(myList: PreviewData.myList)
+    }
 }

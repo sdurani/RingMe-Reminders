@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyListView: View {
+struct MyListsView: View {
     
     let myLists: FetchedResults<MyList>
     
@@ -20,7 +20,13 @@ struct MyListView: View {
                 Text("No reminders found")
             } else {
                 ForEach(myLists) { myList in
-                    Text(myList.name)
+                    VStack {
+                        MyListCellView(myList: myList)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding([.leading], 10)
+                            .font(.title3)
+                        Divider()
+                    }
                 }
             }
         }

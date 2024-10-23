@@ -29,6 +29,8 @@
 		72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6702CC97BF500773B67 /* PreviewData.swift */; };
 		72F0F6732CC986C600773B67 /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6722CC986C600773B67 /* MyListDetailView.swift */; };
 		72F0F6752CC9933800773B67 /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6742CC9933800773B67 /* ReminderListView.swift */; };
+		72F0F6772CC9973800773B67 /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6762CC9973800773B67 /* ReminderCellView.swift */; };
+		72F0F67A2CC99C0C00773B67 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6792CC99C0C00773B67 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		72F0F6702CC97BF500773B67 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		72F0F6722CC986C600773B67 /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
 		72F0F6742CC9933800773B67 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		72F0F6762CC9973800773B67 /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
+		72F0F6792CC99C0C00773B67 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		72D75AF82CB9FFE2008B6E67 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
+				72F0F6782CC99BE000773B67 /* Extensions */,
 				72F0F6692CC974F900773B67 /* Transformers */,
 				72F0F6662CC9732000773B67 /* Services */,
 				72F0F65F2CC966B600773B67 /* Views */,
@@ -202,6 +207,7 @@
 				72F0F66E2CC97BB400773B67 /* MyListCellView.swift */,
 				72F0F6722CC986C600773B67 /* MyListDetailView.swift */,
 				72F0F6742CC9933800773B67 /* ReminderListView.swift */,
+				72F0F6762CC9973800773B67 /* ReminderCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +226,14 @@
 				72F0F66A2CC9750E00773B67 /* UIColorTransformer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		72F0F6782CC99BE000773B67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F6792CC99C0C00773B67 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +375,9 @@
 				72F0F66B2CC9750E00773B67 /* UIColorTransformer.swift in Sources */,
 				72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */,
 				72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */,
+				72F0F67A2CC99C0C00773B67 /* Date+Extensions.swift in Sources */,
 				72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */,
+				72F0F6772CC9973800773B67 /* ReminderCellView.swift in Sources */,
 				72F0F6652CC96CB900773B67 /* ColorPickerView.swift in Sources */,
 				72D75AFC2CB9FFE2008B6E67 /* HomeView.swift in Sources */,
 				72D75AFA2CB9FFE2008B6E67 /* CapstoneAppApp.swift in Sources */,

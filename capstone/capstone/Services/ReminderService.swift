@@ -33,4 +33,11 @@ class ReminderService {
         try save()
     }
     
+    static func getRemindersByList(myList: MyList) -> NSFetchRequest<Reminder> {
+        let request = Reminder.fetchRequest()
+        request.sortDescriptors = []
+        request.predicate = NSPredicate(format: "list = %@ AND isCompleted = false", myList)
+        return request
+    }
+    
 }

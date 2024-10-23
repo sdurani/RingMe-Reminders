@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ReminderListView: View {
+    
+    let reminders: FetchedResults<Reminder>
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(reminders) { reminder in
+            Text(reminder.title ?? "")
+        }
     }
 }
 
-#Preview {
-    ReminderListView()
-}
+//struct ReminderListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ReminderListView()
+//    }
+//}

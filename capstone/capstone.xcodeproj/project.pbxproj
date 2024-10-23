@@ -27,6 +27,7 @@
 		72F0F66D2CC97A1100773B67 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F66C2CC97A1100773B67 /* MyListsView.swift */; };
 		72F0F66F2CC97BB400773B67 /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F66E2CC97BB400773B67 /* MyListCellView.swift */; };
 		72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6702CC97BF500773B67 /* PreviewData.swift */; };
+		72F0F6732CC986C600773B67 /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6722CC986C600773B67 /* MyListDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		72F0F66C2CC97A1100773B67 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
 		72F0F66E2CC97BB400773B67 /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
 		72F0F6702CC97BF500773B67 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		72F0F6722CC986C600773B67 /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				72F0F6642CC96CB900773B67 /* ColorPickerView.swift */,
 				72F0F66C2CC97A1100773B67 /* MyListsView.swift */,
 				72F0F66E2CC97BB400773B67 /* MyListCellView.swift */,
+				72F0F6722CC986C600773B67 /* MyListDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72F0F66F2CC97BB400773B67 /* MyListCellView.swift in Sources */,
+				72F0F6732CC986C600773B67 /* MyListDetailView.swift in Sources */,
 				727BE65F2CBF1E1C00AE384A /* MyLists.swift in Sources */,
 				72F0F6682CC9733600773B67 /* ReminderService.swift in Sources */,
 				727BE6612CBF2F0800AE384A /* AddMyList.swift in Sources */,

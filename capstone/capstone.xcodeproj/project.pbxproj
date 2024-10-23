@@ -34,6 +34,7 @@
 		72F0F67C2CC9A6BC00773B67 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F67B2CC9A6BC00773B67 /* ReminderDetailView.swift */; };
 		72F0F67F2CC9A7C600773B67 /* ReminderEditConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F67E2CC9A7C600773B67 /* ReminderEditConfig.swift */; };
 		72F0F6822CC9AA7F00773B67 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6812CC9AA7F00773B67 /* CustomOperators.swift */; };
+		72F0F6842CC9B4B700773B67 /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F6832CC9B4B700773B67 /* SelectListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		72F0F67B2CC9A6BC00773B67 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
 		72F0F67E2CC9A7C600773B67 /* ReminderEditConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditConfig.swift; sourceTree = "<group>"; };
 		72F0F6812CC9AA7F00773B67 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		72F0F6832CC9B4B700773B67 /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				72F0F6742CC9933800773B67 /* ReminderListView.swift */,
 				72F0F6762CC9973800773B67 /* ReminderCellView.swift */,
 				72F0F67B2CC9A6BC00773B67 /* ReminderDetailView.swift */,
+				72F0F6832CC9B4B700773B67 /* SelectListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */,
 				72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */,
 				72F0F67A2CC99C0C00773B67 /* Date+Extensions.swift in Sources */,
+				72F0F6842CC9B4B700773B67 /* SelectListView.swift in Sources */,
 				72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */,
 				72F0F6772CC9973800773B67 /* ReminderCellView.swift in Sources */,
 				72F0F6652CC96CB900773B67 /* ColorPickerView.swift in Sources */,

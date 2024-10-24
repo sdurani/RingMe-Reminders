@@ -6,9 +6,21 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 @main
 struct CapstoneAppApp: App {
+    
+    init() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                // notification granted
+            } else {
+                // display message to user
+            }
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             HomeView()

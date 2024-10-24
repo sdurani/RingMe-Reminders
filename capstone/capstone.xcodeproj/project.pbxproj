@@ -10,6 +10,7 @@
 		725D6B1B2CC9D20D009C539B /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B1A2CC9D20D009C539B /* Delay.swift */; };
 		725D6B1D2CCA305A009C539B /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B1C2CCA305A009C539B /* ReminderStatsBuilder.swift */; };
 		725D6B1F2CCA36EA009C539B /* ReminderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B1E2CCA36EA009C539B /* ReminderStatsView.swift */; };
+		725D6B222CCA96DE009C539B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B212CCA96DE009C539B /* NotificationManager.swift */; };
 		727BE65F2CBF1E1C00AE384A /* MyLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE65E2CBF1E1C00AE384A /* MyLists.swift */; };
 		727BE6612CBF2F0800AE384A /* AddMyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE6602CBF2F0800AE384A /* AddMyList.swift */; };
 		72D75AFA2CB9FFE2008B6E67 /* CapstoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */; };
@@ -61,6 +62,7 @@
 		725D6B1A2CC9D20D009C539B /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		725D6B1C2CCA305A009C539B /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
 		725D6B1E2CCA36EA009C539B /* ReminderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsView.swift; sourceTree = "<group>"; };
+		725D6B212CCA96DE009C539B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		727BE65E2CBF1E1C00AE384A /* MyLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLists.swift; sourceTree = "<group>"; };
 		727BE6602CBF2F0800AE384A /* AddMyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyList.swift; sourceTree = "<group>"; };
 		72D75AF62CB9FFE2008B6E67 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		725D6B202CCA968D009C539B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				725D6B212CCA96DE009C539B /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		727BE65D2CBF1DEF00AE384A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		72D75AF82CB9FFE2008B6E67 /* capstone */ = {
 			isa = PBXGroup;
 			children = (
+				725D6B202CCA968D009C539B /* Managers */,
 				72F0F6802CC9AA5F00773B67 /* Utils */,
 				72F0F6782CC99BE000773B67 /* Extensions */,
 				72F0F6692CC974F900773B67 /* Transformers */,
@@ -415,6 +426,7 @@
 				72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */,
 				72F0F67A2CC99C0C00773B67 /* Date+Extensions.swift in Sources */,
 				72F0F6842CC9B4B700773B67 /* SelectListView.swift in Sources */,
+				725D6B222CCA96DE009C539B /* NotificationManager.swift in Sources */,
 				72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */,
 				72F0F6772CC9973800773B67 /* ReminderCellView.swift in Sources */,
 				72F0F6652CC96CB900773B67 /* ColorPickerView.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 import UserNotifications
 
 @main
-struct CapstoneAppApp: App {
+struct RingMeRemindersAppApp: App {
     
     init() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in

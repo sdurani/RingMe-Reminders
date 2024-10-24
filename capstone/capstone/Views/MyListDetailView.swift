@@ -52,7 +52,7 @@ struct MyListDetailView: View {
                         print(error.localizedDescription)
                     }
                 }
-            }.disabled(!isFormValid)
+            }/*.disabled(!isFormValid)*/
         }
     }
 }

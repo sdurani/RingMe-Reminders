@@ -10,15 +10,17 @@ import SwiftUI
 // enum: simplifies having multi closures, contains basically cell events that will be fired
 enum ReminderCellEvents {
     case onInfo
-    case onCheckedChange(Reminder)
+    case onCheckedChange(Reminder, Bool)
     case onSelect(Reminder)
 }
 
 struct ReminderCellView: View {
     
     let reminder: Reminder
-    @State private var checked: Bool = false
+    let delay = Delay()
+    let isSelected: Bool
     
+    @State private var checked: Bool = false
     let onEvent: (ReminderCellEvents) -> Void
     
     private func formatDate(_ date: Date) -> String {
@@ -38,8 +40,15 @@ struct ReminderCellView: View {
                 .font(.title2)
                 .opacity(0.4)
                 .onTapGesture {
-                    checked.toggle()    
-                    onEvent(.onCheckedChange(reminder))
+                    checked.toggle() 
+                    
+                    // cancel the old task
+                    delay.cancel()
+                    
+                    // call onCheckedChange inside the delay
+                    delay.performWork {
+                        onEvent(.onCheckedChange(reminder, checked))
+                    }
                 }
             
             VStack(alignment: .leading) {
@@ -65,6 +74,7 @@ struct ReminderCellView: View {
             
             Spacer()
             Image(systemName: "info.circle.fill")
+                .opacity(isSelected ? 1.0: 0.0)
                 .onTapGesture {
                     onEvent(.onInfo)
                 }
@@ -79,6 +89,6 @@ struct ReminderCellView: View {
 
 struct ReminderCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ReminderCellView(reminder: PreviewData.reminder, onEvent: { _ in })
+        ReminderCellView(reminder: PreviewData.reminder, isSelected: false, onEvent: { _ in })
     }
 }

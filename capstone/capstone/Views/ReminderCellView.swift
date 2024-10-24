@@ -40,7 +40,7 @@ struct ReminderCellView: View {
                 .font(.title2)
                 .opacity(0.4)
                 .onTapGesture {
-                    checked.toggle() 
+                    checked.toggle()
                     
                     // cancel the old task
                     delay.cancel()
@@ -68,8 +68,8 @@ struct ReminderCellView: View {
                         Text(reminderTime.formatted(date: .omitted, time: .shortened))
                     }
                 }.frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.caption)
-                    .opacity(0.4)
+                .font(.caption)
+                .opacity(0.4)
             }
             
             Spacer()
@@ -78,7 +78,11 @@ struct ReminderCellView: View {
                 .onTapGesture {
                     onEvent(.onInfo)
                 }
-        }.contentShape(Rectangle())
+        }
+        .onAppear{
+            checked = reminder.isCompleted
+        }
+        .contentShape(Rectangle())
             .onTapGesture {
                 onEvent(.onSelect(reminder))
             }

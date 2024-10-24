@@ -11,6 +11,7 @@
 		725D6B1D2CCA305A009C539B /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B1C2CCA305A009C539B /* ReminderStatsBuilder.swift */; };
 		725D6B1F2CCA36EA009C539B /* ReminderStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B1E2CCA36EA009C539B /* ReminderStatsView.swift */; };
 		725D6B222CCA96DE009C539B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B212CCA96DE009C539B /* NotificationManager.swift */; };
+		725D6B242CCAA192009C539B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D6B232CCAA191009C539B /* Color+Extensions.swift */; };
 		727BE65F2CBF1E1C00AE384A /* MyLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE65E2CBF1E1C00AE384A /* MyLists.swift */; };
 		727BE6612CBF2F0800AE384A /* AddMyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BE6602CBF2F0800AE384A /* AddMyList.swift */; };
 		72D75AFA2CB9FFE2008B6E67 /* CapstoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */; };
@@ -63,6 +64,7 @@
 		725D6B1C2CCA305A009C539B /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
 		725D6B1E2CCA36EA009C539B /* ReminderStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsView.swift; sourceTree = "<group>"; };
 		725D6B212CCA96DE009C539B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		725D6B232CCAA191009C539B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		727BE65E2CBF1E1C00AE384A /* MyLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLists.swift; sourceTree = "<group>"; };
 		727BE6602CBF2F0800AE384A /* AddMyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyList.swift; sourceTree = "<group>"; };
 		72D75AF62CB9FFE2008B6E67 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				72F0F6792CC99C0C00773B67 /* Date+Extensions.swift */,
+				725D6B232CCAA191009C539B /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,7 +366,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 72D75AF12CB9FFE2008B6E67 /* Build configuration list for PBXProject "capstone" */;
+			buildConfigurationList = 72D75AF12CB9FFE2008B6E67 /* Build configuration list for PBXProject "RingMeReminders" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -425,6 +428,7 @@
 				72F0F6712CC97BF500773B67 /* PreviewData.swift in Sources */,
 				72F0F65C2CC9624000773B67 /* MyList+CoreDataClass.swift in Sources */,
 				72F0F67A2CC99C0C00773B67 /* Date+Extensions.swift in Sources */,
+				725D6B242CCAA192009C539B /* Color+Extensions.swift in Sources */,
 				72F0F6842CC9B4B700773B67 /* SelectListView.swift in Sources */,
 				725D6B222CCA96DE009C539B /* NotificationManager.swift in Sources */,
 				72F0F6632CC9672D00773B67 /* AddNewListView.swift in Sources */,
@@ -618,7 +622,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sama.capstone;
+				PRODUCT_BUNDLE_IDENTIFIER = sama.RingMeReminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -655,7 +659,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sama.capstone;
+				PRODUCT_BUNDLE_IDENTIFIER = sama.RingMeReminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -758,7 +762,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72D75AF12CB9FFE2008B6E67 /* Build configuration list for PBXProject "capstone" */ = {
+		72D75AF12CB9FFE2008B6E67 /* Build configuration list for PBXProject "RingMeReminders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72D75B192CB9FFE6008B6E67 /* Debug */,

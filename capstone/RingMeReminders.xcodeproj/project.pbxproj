@@ -67,7 +67,7 @@
 		725D6B232CCAA191009C539B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		727BE65E2CBF1E1C00AE384A /* MyLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLists.swift; sourceTree = "<group>"; };
 		727BE6602CBF2F0800AE384A /* AddMyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyList.swift; sourceTree = "<group>"; };
-		72D75AF62CB9FFE2008B6E67 /* capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D75AF62CB9FFE2008B6E67 /* RingMeReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingMeReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D75AF92CB9FFE2008B6E67 /* CapstoneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppApp.swift; sourceTree = "<group>"; };
 		72D75AFB2CB9FFE2008B6E67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72D75AFD2CB9FFE5008B6E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		72D75AF72CB9FFE2008B6E67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72D75AF62CB9FFE2008B6E67 /* capstone.app */,
+				72D75AF62CB9FFE2008B6E67 /* RingMeReminders.app */,
 				72D75B072CB9FFE6008B6E67 /* capstoneTests.xctest */,
 				72D75B112CB9FFE6008B6E67 /* capstoneUITests.xctest */,
 			);
@@ -304,7 +304,7 @@
 			);
 			name = capstone;
 			productName = capstone;
-			productReference = 72D75AF62CB9FFE2008B6E67 /* capstone.app */;
+			productReference = 72D75AF62CB9FFE2008B6E67 /* RingMeReminders.app */;
 			productType = "com.apple.product-type.application";
 		};
 		72D75B062CB9FFE6008B6E67 /* capstoneTests */ = {
@@ -608,6 +608,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RingMeReminders;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -623,7 +624,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sama.RingMeReminders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RingMeReminders;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -645,6 +646,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RingMeReminders;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -660,7 +662,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sama.RingMeReminders;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RingMeReminders;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

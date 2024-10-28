@@ -85,4 +85,78 @@ class ReminderService {
         return request
     }
     
+    static func sendReminderToBackend(reminder: Reminder, completion: @escaping (String?) -> Void) {
+            guard let url = URL(string: "http://10.16.248.53:5555/generate-reminder") else {
+                print("Invalid URL")
+                completion(nil)
+                return
+            }
+
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            // convert Date to String with day of the week and time
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "EEEE" // day of the week
+            var scheduledTimeString = ""
+
+            if let reminderDate = reminder.reminderDate {
+                scheduledTimeString = dateFormatter.string(from: reminderDate)
+            }
+
+            if let reminderTime = reminder.reminderTime {
+                dateFormatter.dateFormat = "h:mm a" // 12-hour format with AM/PM
+                let timeString = dateFormatter.string(from: reminderTime)
+                scheduledTimeString += " at " + timeString
+            }
+
+        
+            let parameters: [String: Any] = [
+                "user_name": "John",
+                "task": reminder.title ?? "",
+                "scheduled_time": scheduledTimeString
+            ]
+
+            request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        
+
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                
+                if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                        completion(nil)
+                        return
+                    }
+                
+                guard let data = data, error == nil else {
+                    print("No data received")
+                    completion(nil)
+                    return
+                }
+
+//                if let json = try? JSONSerialization.jsonObject(with: data, options: []),
+//                   let dict = json as? [String: String],
+//                   let aiResponse = dict["ai_response"] {
+//                    completion(aiResponse)
+//                } else {
+//                    completion(nil)
+//                }
+//                if let aiResponse = String(data: data, encoding: .utf8) {
+//                    completion(aiResponse)
+//                } else {
+//                    completion(nil)
+//                }
+                if let aiResponse = try? JSONDecoder().decode(String.self, from: data) {
+                    DispatchQueue.main.async {
+                        completion(aiResponse)
+                    }
+                } else {
+                    print("Failed to parse JSON response")
+                }
+            }
+
+            task.resume()
+        }
+    
 }

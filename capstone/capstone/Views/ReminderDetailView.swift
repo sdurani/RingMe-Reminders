@@ -85,8 +85,19 @@ struct ReminderDetailView: View {
                                 if updated {
                                     // check if it should schedule a notification
                                     if reminder.reminderDate != nil || reminder.reminderTime != nil {
-                                        let userData = UserData(title: reminder.title, body: reminder.notes, date: reminder.reminderDate, time: reminder.reminderTime)
-                                        NotificationManager.scheduleNotification(userData: userData)
+                                        let userData = UserData(title: reminder.title, body: reminder.notes, date: reminder.reminderDate, time: reminder.reminderTime, reminderID: reminder.objectID)
+                                        NotificationManager.scheduleNotification(userData: userData, reminderID: reminder.objectID)
+                                        // call sendReminderToBackend directly
+                                        ReminderService.sendReminderToBackend(reminder: reminder) { responseMessage in
+                                            if let response = responseMessage {
+                                                // handle the server response
+                                                print("Server response: \(response)")
+                                                // update reminder.notes
+                                                reminder.notes = response
+                                            } else {
+                                                print("No response from server.")
+                                            }
+                                        }
                                     }
                                 }
                             } catch {

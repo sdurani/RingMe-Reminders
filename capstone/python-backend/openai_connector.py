@@ -6,7 +6,7 @@ client = OpenAI()
 
 class AI_Character(object):
     def __init__(self, name, tagline, description, backstory):
-        self.model = "gpt-4"  # Choose the appropriate model
+        self.model = "gpt-4"  
         self.name = name
         self.tagline = tagline
         self.description = description
@@ -15,7 +15,6 @@ class AI_Character(object):
     def generate_ai_reminder_call(self, user_name, task, scheduled_time):
         print(f"Generating reminder call for {user_name} about the task: {task}")
 
-        # Construct the character prompt and user prompt directly
         character_prompt = f"""
         You are an AI embodying the character of {self.name}. 
         Fully assume this persona based on the following information:
@@ -45,19 +44,18 @@ class AI_Character(object):
         Use your character's voice, but keep it realistic and straightforward.
         """
 
-        # Combine both prompts for the OpenAI call
         combined_prompt = character_prompt + prompt
         
         print("Sending request to OpenAI...")
         response = client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": combined_prompt}],
-            max_tokens=200,  # Adjust based on your needs
-            temperature=0.8   # Lower temperature for more predictable responses
+            max_tokens=200,  
+            temperature=0.8   
         )
         ai_response = response.choices[0].message.content
 
-        # Print token usage
+
         print(f"Prompt tokens: {response.usage.prompt_tokens}")
         print(f"Completion tokens: {response.usage.completion_tokens}")
         print(f"Total tokens: {response.usage.total_tokens}")
@@ -66,7 +64,7 @@ class AI_Character(object):
         return ai_response
 
 if __name__ == "__main__":
-    # Create an instance of AI_Character
+    # test AI_Character instance
     print("Creating AI Character...")
     nicki = AI_Character(
         name="Nicki Minaj",
@@ -81,15 +79,12 @@ if __name__ == "__main__":
         Pink Friday (2010), which produced hits like "Super Bass." Her dynamic style and unapologetic confidence have made her a cultural icon."""
     )
 
-    # Define user name and task
     user_name = "John"
     task = "study"
     scheduled_time = "Monday at 4:00 PM"
 
-    # Generate the reminder call
     print("\nGenerating reminder call...")
     response = nicki.generate_ai_reminder_call(user_name, task, scheduled_time)
 
-    # Print the response
     print("\nAI-generated reminder call:")
     print(response)

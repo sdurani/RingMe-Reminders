@@ -3,7 +3,7 @@ from openai_connector import AI_Character
 
 app = Flask(__name__)
 
-# Create an instance of AI_Character
+# test AI_Character instance
 nicki = AI_Character(
     name="Nicki Minaj",
     tagline="""You wanna know what scares people? Success. When you don't make moves and when you don't climb up the ladder, 

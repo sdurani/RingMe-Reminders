@@ -86,7 +86,7 @@ class ReminderService {
     }
     
     static func sendReminderToBackend(reminder: Reminder, completion: @escaping (String?) -> Void) {
-            guard let url = URL(string: "http://10.16.248.53:5555/generate-reminder") else {
+            guard let url = URL(string: "http://192.168.0.33:5555/generate-reminder") else {
                 print("Invalid URL")
                 completion(nil)
                 return

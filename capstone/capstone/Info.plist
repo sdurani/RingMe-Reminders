@@ -4,22 +4,28 @@
 <dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSExceptionDomains</key>
-        <dict>
-                <key>10.16.248.53</key>
-                <dict>
-                    <key>NSIncludesSubdomains</key>
-                    <true/>
-                    <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-                    <true/>
-                </dict>
-        </dict>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
 		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>10.16.248.53</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

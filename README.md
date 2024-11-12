@@ -2,17 +2,18 @@
 
 **RingMe Reminders** is a fun, interactive reminder app inspired by Apple's Reminders app, with a unique twist: your favorite celebrity or video game character calls you to help you get your work done! Designed to make task management more engaging, RingMe Reminders is built with Swift and Core Data for the iOS frontend and Python for the backend. By integrating generative AI using OpenAI's API, RingMe Reminders ensures that each reminder is personalized and motivating.
 
-When reminders are triggered, a chosen character or celebrity "voices" a notification, encouraging users to complete tasks. This creates an entertaining experience for people who need that extra push—whether they're students juggling assingments and extracurriculars or anyone who finds typical task lists a bit dull. As someone with ADHD, creating an app that helps neurodivergent individuals in staying organized is deeply meaningful to me.
+When reminders are triggered, a chosen character "voices" the notification, encouraging users to complete tasks. This creates an entertaining experience for people who need that extra push—whether they're students juggling assingments and extracurriculars or anyone who finds typical task lists a bit dull. As someone with ADHD, creating an app that helps neurodivergent individuals in staying organized is deeply meaningful to me.
 
 ## Goals
 
 - **Provide interactive, character-driven reminders** to make mundane tasks feel exciting and special.
-- **Deliver a streamlined and easy-to-navigate interface** that stays minimalistic, making it accessible and efficient to use.
+- **Deliver a streamlined and easy-to-navigate app** that stays minimalistic, making it accessible and efficient to use.
 - **Create a supportive tool for neurodivergent users** to help simplify their daily routines.
 
 ## Features
 
 - **Minimalistic Interface**: Features a clean, intuitive layout that’s easy to navigate and free of distracting elements.
+- **Lists**: Users can categorize their reminders into customizable lists, allowing for better organization.
 - **Today View**: Displays all reminders due today, with an option to mark tasks as complete.
 - **Scheduled View**: Shows upcoming tasks organized by their scheduled dates.
 - **Completed View**: A log of finished tasks, allowing users to review past reminders.
@@ -63,7 +64,8 @@ When reminders are triggered, a chosen character or celebrity "voices" a notific
     pipenv shell
     flask run
 
-## Features In Development
+## In Development
+
 - **Expanded Character Options**: The default character is currently Nicki Minaj, but more characters are being added. Users will have the option to select from a range of characters or celebrities.
 - **Character Database**: A dedicated database will store available characters, with future functionality allowing users to contribute custom character information and add more character options.
 - **Voice Cloning**: Integration with Eleven Labs' API will enable characters to deliver reminders in their own voices, making the experience even more immersive.

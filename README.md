@@ -30,7 +30,7 @@ When reminders are triggered, a chosen character "voices" the notification, enco
 ### Backend
 
 - **Python & Flask**: The backend framework handling API requests and responses.
-- **OpenAI API**: Generates character-based messages to enhance user interaction.
+- **OpenAI API**: Builds characters and generates messages as the selected character.
 
 ## Database Schema
 

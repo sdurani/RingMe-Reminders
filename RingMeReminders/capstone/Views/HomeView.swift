@@ -111,7 +111,7 @@ struct HomeView: View {
                 reminderStatsValues = reminderStatsBuilder.build(myListResults: myListResults)
             }
             .padding()
-            .navigationTitle("Reminders")
+            .navigationTitle("RingMe Reminders ☎️")
         }.searchable(text: $search)
     }
 }

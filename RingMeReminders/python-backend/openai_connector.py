@@ -1,8 +1,15 @@
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
 from flask import Flask
 
-client = OpenAI()
+load_dotenv()
+
+api_key = os.environ.get("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("The OPENAI_API_KEY environment variable is not set.")
+
+client = OpenAI(api_key=api_key)
 
 class AI_Character(object):
     def __init__(self, name, tagline, description, backstory):

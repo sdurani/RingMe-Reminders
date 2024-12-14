@@ -1,8 +1,15 @@
 # RingMe Reminders
 
+<img width="400" height="250" alt="Screenshot 2024-12-06 at 7 52 11 PM" src="https://github.com/user-attachments/assets/acd67a87-07c4-48b2-a8d0-c46975bdd921">    
+
+## Introduction
+
 **RingMe Reminders** is a fun, interactive reminder app inspired by Apple's Reminders app, with a unique twist: your favorite celebrity or video game character calls you to help you get your work done! Designed to make task management more engaging, RingMe Reminders is built with Swift and Core Data for the iOS frontend and Python for the backend. By integrating generative AI using OpenAI's API, RingMe Reminders ensures that each reminder is personalized and motivating.
 
 When reminders are triggered, a chosen character "voices" the notification, encouraging users to complete tasks. This creates an entertaining experience for people who need that extra push—whether they're students juggling assingments and extracurriculars or anyone who finds typical task lists a bit dull. As someone with ADHD, creating an app that helps neurodivergent individuals in staying organized is deeply meaningful to me.
+
+<img width="293" alt="Screenshot 2024-12-06 at 10 03 52 PM" src="https://github.com/user-attachments/assets/29064c39-a79f-4b5e-976f-971a2ebcac0b" />                                
+<img width="300" alt="Screenshot 2024-12-06 at 10 16 40 PM" src="https://github.com/user-attachments/assets/53ba098e-96ab-44af-ae3f-b4faf4f018eb">
 
 ## Goals
 
